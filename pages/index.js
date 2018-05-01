@@ -6,6 +6,8 @@ import codeBg from "../static/images/code-background.jpg";
 import gameBg from "../static/images/gaming-background.jpg";
 import singBg from "../static/images/singing-background.jpg";
 import movieBg from "../static/images/movie-background.jpg";
+import sketchBg from "../static/images/sketch-background.jpg";
+import stockBg from "../static/images/stock-background.jpg";
 
 class Index extends React.Component {
   constructor(props) {
@@ -17,75 +19,77 @@ class Index extends React.Component {
 
   componentDidMount() {
     this.setState({ isReady: true });
+    this.myfunc();
   }
 
   myfunc = () => {
-    document.addEventListener("DOMContentLoaded", function(event) {
-      var dataText = ["Programming", "Gaming", "Singing", "Sci-Fi Movies"];
-      var bgImages = [codeBg, gameBg, singBg, movieBg];
+    var dataText = [
+      "Programming",
+      "Gaming",
+      "Singing",
+      "Sci-Fi Movies",
+      "Sketching",
+      "Stock Investments"
+    ];
+    var bgImages = [codeBg, gameBg, singBg, movieBg, sketchBg, stockBg];
 
-      function typeWriter(text, i, fnCallback) {
-        if (i < text.length) {
-          document.querySelector(".headline").innerHTML =
-            text.substring(0, i + 1) +
-            '<span class="typewriter" aria-hidden="true"></span>';
+    function typeWriter(text, i, fnCallback) {
+      if (i < text.length) {
+        document.querySelector(".headline").innerHTML =
+          text.substring(0, i + 1) +
+          '<span class="typewriter" aria-hidden="true"></span>';
 
-          setTimeout(function() {
-            typeWriter(text, i + 1, fnCallback);
-          }, 100);
-        } else if (typeof fnCallback == "function") {
-          setTimeout(fnCallback, 400);
-        }
+        setTimeout(function() {
+          typeWriter(text, i + 1, fnCallback);
+        }, 100);
+      } else if (typeof fnCallback == "function") {
+        setTimeout(fnCallback, 400);
+      }
+    }
+
+    function StartTextAnimation(i) {
+      if (typeof dataText[i] == "undefined") {
+        StartTextAnimation(0);
       }
 
-      function StartTextAnimation(i) {
-        if (typeof dataText[i] == "undefined") {
-          StartTextAnimation(0);
-        }
-
-        if (i < dataText[i].length) {
-          $("#hero-overlay").css(
-            "background-image",
-            "url(" + bgImages[i] + ")"
-          );
-          typeWriter(dataText[i], 0, function() {
-            function clearText() {
-              setTimeout(function() {
-                var foo = $(".headline")
-                  .html()
-                  .replace(
-                    '<span class="typewriter" aria-hidden="true"></span>',
-                    ""
-                  );
-                if (foo.charAt(foo.length - 1) === ">") {
-                  var newX = foo.substring(0, foo.length - 4);
-                } else {
-                  var newX = foo.substring(0, foo.length - 1);
-                }
-                $(".headline").html(
-                  newX + '<span class="typewriter" aria-hidden="true"></span>'
-                );
-                if (newX.length > 0) {
-                  clearText();
-                } else {
-                  StartTextAnimation(i + 1);
-                }
-              }, 50);
-            }
+      if (i < dataText[i].length) {
+        $("#hero-overlay").css("background-image", "url(" + bgImages[i] + ")");
+        typeWriter(dataText[i], 0, function() {
+          function clearText() {
             setTimeout(function() {
-              clearText();
-            }, 400);
-          });
-        } else {
-        }
+              var foo = $(".headline")
+                .html()
+                .replace(
+                  '<span class="typewriter" aria-hidden="true"></span>',
+                  ""
+                );
+              if (foo.charAt(foo.length - 1) === ">") {
+                var newX = foo.substring(0, foo.length - 4);
+              } else {
+                var newX = foo.substring(0, foo.length - 1);
+              }
+              $(".headline").html(
+                newX + '<span class="typewriter" aria-hidden="true"></span>'
+              );
+              if (newX.length > 0) {
+                clearText();
+              } else {
+                StartTextAnimation(i + 1);
+              }
+            }, 50);
+          }
+          setTimeout(function() {
+            clearText();
+          }, 400);
+        });
+      } else {
       }
+    }
 
-      StartTextAnimation(0);
-    });
+    StartTextAnimation(0);
   };
 
   render() {
-    this.state.isReady ? this.myfunc() : null;
     return (
       <Layout>
         <div className="main-container">

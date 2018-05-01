@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
             crossorigin="anonymous"
           />
 
-          <title>The Boring Stuff</title>
+          <title>Pritesh Zaveri</title>
         </Head>
         <body>
           <Main />
