@@ -7,6 +7,12 @@ export default class Layout extends React.Component {
     super(props);
   }
   render() {
-    return <div>{this.props.children}</div>;
+    return (
+      <div>
+        <Header />
+        {this.props.children}
+        <Footer />
+      </div>
+    );
   }
 }
