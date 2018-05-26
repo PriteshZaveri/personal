@@ -1,1 +1,1 @@
-web: yarn deploy
+web: next start
