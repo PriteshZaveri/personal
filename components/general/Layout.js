@@ -10,7 +10,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Header />
-        {this.props.children}
+        <div className="main-wrapper">{this.props.children}</div>
         <Footer />
       </div>
     );
