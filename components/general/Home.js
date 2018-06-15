@@ -1,30 +1,20 @@
 import React from "react";
 import Waypoint from "react-waypoint";
+import Graph from "./Graph";
 import helper from "../helpers/helpers.js";
 import "../../static/css/home.css";
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      animation1: false,
-      animation2: false,
-      animation3: false,
-      animation4: false
-    };
+    this.state = {};
   }
 
-  handleAnimation = (animation, animationName) => {
-    this.state[animation] === true
-      ? null
-      : (helper.handleAnimation(animation, animationName),
-        this.setState({ [animation]: true }));
-  };
   render() {
     return (
       <div className="home">
-        <div className="block-1">
-          <div className="col-lg-12">
+        <div className="block block-1">
+          <div className="col-xs-12">
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 left-side">
               <h1>
                 <span>THIS IS ME</span>
@@ -69,6 +59,86 @@ export default class Home extends React.Component {
                 className="self-image"
               />
             </div>
+          </div>
+        </div>
+        <div className="block block-2">
+          <div>
+            <h1>
+              <span>MY SKILLS</span>
+              <div className="skills-wrapper col-lg-12">
+                <div className="col-lg-6 graphs-6">
+                  <Graph
+                    label="HTML5"
+                    width={90}
+                    color1="linear-gradient(120deg, #f093fb 0%, #f5576c 100%);"
+                  />
+                  <Graph
+                    label="CSS3"
+                    width={85}
+                    color1="linear-gradient(to right, #37ecba 0%, #72afd3 100%);"
+                  />
+                  <Graph
+                    label="JS"
+                    width={80}
+                    color1="linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);"
+                  />
+                  <Graph
+                    label="REACT"
+                    width={80}
+                    color1="linear-gradient(to right, #00c6fb 0%, #005bea 100%);"
+                  />
+                  <Graph
+                    label="MONGO"
+                    width={60}
+                    color1="linear-gradient(to right, #abecd6 0%, #fbed96 100%);"
+                  />
+                  <Graph
+                    label="SELENIUM"
+                    width={30}
+                    color1="linear-gradient(to right, #cd9cf2 0%, #cd9cff 100%);"
+                  />
+                </div>
+                <div className="col-lg-6 graphs-6">
+                  <Graph
+                    label="JAVA"
+                    width={70}
+                    color1="linear-gradient(to right, #4facfe 0%, #00f2fe 100%);"
+                  />
+                  <Graph
+                    label="PHP"
+                    width={60}
+                    color1="linear-gradient(to right, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);"
+                  />
+                  <Graph
+                    label="PYTHON"
+                    width={40}
+                    color1="linear-gradient(to right, #43e97b 0%, #38f9d7 100%);"
+                  />
+                  <Graph
+                    label="NODE"
+                    width={75}
+                    color1="linear-gradient(to right, #13547a 0%, #80d0c7 100%);"
+                  />
+                  <Graph
+                    label="MYSQL"
+                    width={70}
+                    color1="linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);"
+                  />
+                  <Graph
+                    label="C"
+                    width={45}
+                    color1="linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);"
+                  />
+                </div>
+              </div>
+            </h1>
+          </div>
+        </div>
+        <div className="block block-3">
+          <div>
+            <h1>
+              <span>WORK EXPERIENCE</span>
+            </h1>
           </div>
         </div>
       </div>
