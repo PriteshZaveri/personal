@@ -1,0 +1,139 @@
+.nav-wrapper {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0 2px 5px #ddd, 0 5px 15px #ddd;
+  background: #fff;
+  z-index: 2;
+}
+
+.logo-container {
+  display: inline-block;
+}
+
+.logo-container span {
+  display: inline-block;
+  font-size: 24px;
+  vertical-align: top;
+}
+.logo-container span.fname {
+  position: absolute;
+  left: 100px;
+  top: 20px;
+}
+.logo-container span.lname {
+  position: absolute;
+  left: 120px;
+  top: 45px;
+}
+
+.logo {
+  padding: 10px;
+  width: auto;
+  height: 85px;
+  margin-top: 8px;
+}
+
+.nav-wrapper .desk-ul {
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav-wrapper .desk-ul li {
+  list-style-type: none;
+  display: inline-block;
+  height: 100px;
+  padding: 40px 20px;
+  font-size: 20px;
+}
+
+.nav-wrapper .desk-ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  transition: font-weght 0.5s ease;
+}
+
+.nav-wrapper .desk-ul li a:hover {
+  font-weight: 600;
+}
+
+.nav-wrapper .desk-ul li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.nav-wrapper .desk-ul li:hover:after {
+  width: 100%;
+  background: #a02000;
+}
+
+#mobile-nav,
+.hamburger {
+  display: none;
+}
+
+.active {
+  transition: 10s;
+  display: block;
+  right: 300px;
+}
+
+@media screen and (max-width: 991px) {
+  .nav-wrapper .desk-ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 37px;
+  }
+  .times {
+    display: block;
+    padding: 20px;
+    text-align: right;
+  }
+  .hamburger i,
+  .times i {
+    font-size: 28px;
+    cursor: pointer;
+  }
+  #mobile-nav {
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    /* width: 400px; */
+    z-index: 10;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 2px 5px #aaa, 4px 4px 50px #ccc;
+    transition: 0.5s ease;
+  }
+  #mobile-nav ul {
+    padding-left: 0px;
+  }
+
+  #mobile-nav ul a {
+    display: block;
+    text-align: center;
+    padding: 50px 100px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2s;
+  }
+
+  #mobile-nav ul a:hover {
+    color: white;
+    text-decoration: none;
+    background: #a02000;
+  }
+}
