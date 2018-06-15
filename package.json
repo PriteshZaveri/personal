@@ -18,6 +18,6 @@
     "dev": "next",
     "start": "next start -p $PORT",
     "build": "next build",
-    "deploy": "next build && next start"
+    "deploy": "yarn build && yarn start"
   }
 }
