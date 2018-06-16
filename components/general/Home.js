@@ -1,6 +1,7 @@
 import React from "react";
 import Waypoint from "react-waypoint";
 import Graph from "./Graph";
+import Workex from "./Workex";
 import helper from "../helpers/helpers.js";
 import "../../static/css/home.css";
 
@@ -70,64 +71,64 @@ export default class Home extends React.Component {
                   <Graph
                     label="HTML5"
                     width={90}
-                    color1="linear-gradient(120deg, #f093fb 0%, #f5576c 100%);"
+                    color1="linear-gradient(120deg, #f093fb 0%, #f5576c 100%)"
                   />
                   <Graph
                     label="CSS3"
                     width={85}
-                    color1="linear-gradient(to right, #37ecba 0%, #72afd3 100%);"
+                    color1="linear-gradient(to right, #37ecba 0%, #72afd3 100%)"
                   />
                   <Graph
                     label="JS"
                     width={80}
-                    color1="linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);"
+                    color1="linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%)"
                   />
                   <Graph
                     label="REACT"
                     width={80}
-                    color1="linear-gradient(to right, #00c6fb 0%, #005bea 100%);"
+                    color1="linear-gradient(to right, #00c6fb 0%, #005bea 100%)"
                   />
                   <Graph
                     label="MONGO"
                     width={60}
-                    color1="linear-gradient(to right, #abecd6 0%, #fbed96 100%);"
+                    color1="linear-gradient(to right, #abecd6 0%, #fbed96 100%)"
                   />
                   <Graph
                     label="SELENIUM"
                     width={30}
-                    color1="linear-gradient(to right, #cd9cf2 0%, #cd9cff 100%);"
+                    color1="linear-gradient(to right, #cd9cf2 0%, #cd9cff 100%)"
                   />
                 </div>
                 <div className="col-lg-6 graphs-6">
                   <Graph
                     label="JAVA"
                     width={70}
-                    color1="linear-gradient(to right, #4facfe 0%, #00f2fe 100%);"
+                    color1="linear-gradient(to right, #4facfe 0%, #00f2fe 100%)"
                   />
                   <Graph
                     label="PHP"
                     width={60}
-                    color1="linear-gradient(to right, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);"
+                    color1="linear-gradient(to right, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)"
                   />
                   <Graph
                     label="PYTHON"
                     width={40}
-                    color1="linear-gradient(to right, #43e97b 0%, #38f9d7 100%);"
+                    color1="linear-gradient(to right, #43e97b 0%, #38f9d7 100%)"
                   />
                   <Graph
                     label="NODE"
                     width={75}
-                    color1="linear-gradient(to right, #13547a 0%, #80d0c7 100%);"
+                    color1="linear-gradient(to right, #13547a 0%, #80d0c7 100%)"
                   />
                   <Graph
                     label="MYSQL"
                     width={70}
-                    color1="linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);"
+                    color1="linear-gradient(to right, #ff758c 0%, #ff7eb3 100%)"
                   />
                   <Graph
                     label="C"
                     width={45}
-                    color1="linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);"
+                    color1="linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%)"
                   />
                 </div>
               </div>
@@ -140,6 +141,69 @@ export default class Home extends React.Component {
               <span>WORK EXPERIENCE</span>
             </h1>
           </div>
+          <Workex
+            designation="Application Development Analyst"
+            duration="Aug 2016 - Dec 2017"
+            company="Accenture Solutions Pvt. Ltd."
+          >
+            <div>
+              Trained in SAP Sales and Distribution module. Worked on various
+              technologies in different domains such as Automation Initiatives
+              and products based on Artificial Intelligence.<br />
+              <b>Career Highlights:</b>
+              <br />1) Created 7 independent Automation utilities that resulted
+              in more than 8000 hrs and $750,000 worth of savings in 1 financial
+              year which was highly appreciated by the client.<br />2) Won star
+              employee of the month twice in 8 months.<br />3) Created a website
+              from scratch that served as a Dashboard for team management. The
+              website is hosted on AWS and has proven to be beneficial to the
+              team. The Dashboard is even demonstrated to various Accenture MDs
+              and got highly appreciated for it. I was also a part of the team
+              that created a chat bot called MITR (Machine Intelligent Ticket
+              Resolver)
+            </div>
+          </Workex>
+          <Workex
+            designation="UI Developer"
+            duration="Dec 2017 - Present"
+            company="Media.net"
+          >
+            <div>
+              Currently working as a UI Developer on multiple projects primarily
+              using Javascript frameworks such as React.Js, Node.Js etc. along
+              with HTML5, CSS3 and Jquery.<br />
+              The work also involves creating many frontend elements such as
+              Emails, Landing pages and Search engine results page.<br />
+              <b>Websites currently built:</b>{" "}
+              <i>
+                <u>
+                  mobilesinsider.com, laptopsinsider.com, tvsinsider.com,
+                  degreescompared.com
+                </u>
+              </i>
+            </div>
+          </Workex>
+          <Workex
+            designation="Free Lancing"
+            duration="Sept 2015 - Present"
+            company="Web Developer"
+          >
+            <div>
+              I have been freelancing since college to make websites and android
+              apps.<br />
+              <b>Websites:</b>{" "}
+              <i>
+                <u>
+                  page3manali.in, zestchocolates.com, vowexhibitionandevents.com
+                </u>
+              </i>
+              <br />
+              <b>Apps:</b>{" "}
+              <i>
+                <u>Random - Quartifex (Google Playstore)</u>
+              </i>
+            </div>
+          </Workex>
         </div>
       </div>
     );
