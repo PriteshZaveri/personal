@@ -2,6 +2,7 @@ import React from "react";
 import Waypoint from "react-waypoint";
 import Graph from "./Graph";
 import Workex from "./Workex";
+import Education from "./Education";
 import helper from "../helpers/helpers.js";
 import "../../static/css/home.css";
 
@@ -204,6 +205,34 @@ export default class Home extends React.Component {
               </i>
             </div>
           </Workex>
+        </div>
+        <div className="block block-4">
+          <div>
+            <h1>
+              <span>EDUCATION</span>
+            </h1>
+          </div>
+          <Education
+            designation="Bachelor of Engineering"
+            duration="2012 - 2016"
+            company="K.J.Somaiya College of Engineering"
+          >
+            <div>6.77 C.G.P.A</div>
+          </Education>
+          <Education
+            designation="H.S.C"
+            duration="2010 - 2012"
+            company="Mithibai College"
+          >
+            <div>76.17 %</div>
+          </Education>
+          <Education
+            designation="S.S.C"
+            duration="2010"
+            company="St. Xavier's High School"
+          >
+            <div>90.18 %</div>
+          </Education>
         </div>
       </div>
     );

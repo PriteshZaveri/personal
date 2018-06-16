@@ -34,7 +34,7 @@ export default class Header extends React.Component {
             <a href="#">Trending</a>
           </li>
           <li>
-            <a href="#">Memories</a>
+            <a href="/instagram">Instagram</a>
           </li>
         </ul>
         <span className="hamburger">
@@ -51,7 +51,7 @@ export default class Header extends React.Component {
 
             <a href="#">Trending</a>
 
-            <a href="#">Memories</a>
+            <a href="/instagram">Instagram</a>
           </ul>
         </div>
       </div>

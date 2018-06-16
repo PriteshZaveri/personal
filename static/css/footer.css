@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  background: #333;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 25px 0px;
+}
+
+.footer .copy {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.footer .social {
+  float: right;
+  padding: 0px 20px;
+}
+
+.footer .social a {
+  color: white;
+  padding: 0px 20px;
+  transition: 0.3s;
+}
+
+.footer .social a:hover {
+  color: #278cff;
+}
