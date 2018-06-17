@@ -26,3 +26,17 @@
 .footer .social a:hover {
   color: #278cff;
 }
+
+@media screen and (max-width: 767px) {
+  .footer .social {
+    float: none;
+    display: block;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work-wrapper {
+    padding-top: 20px;
+  }
+}
