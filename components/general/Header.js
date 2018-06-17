@@ -25,13 +25,13 @@ export default class Header extends React.Component {
         </div>
         <ul className="col-md-10 desk-ul">
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
           <li>
-            <a href="#">Trending</a>
+            <a href="/trending">Trending</a>
           </li>
           <li>
             <a href="/instagram">Instagram</a>
@@ -45,11 +45,11 @@ export default class Header extends React.Component {
             <i className="fas fa-times" onClick={this.closeNav.bind(this)} />
           </span>
           <ul>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
 
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
 
-            <a href="#">Trending</a>
+            <a href="/trending">Trending</a>
 
             <a href="/instagram">Instagram</a>
           </ul>

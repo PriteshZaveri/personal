@@ -1,0 +1,93 @@
+.insta-wrapper {
+  padding: 30px 15px;
+}
+
+.insta-wrapper h1 {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 600;
+  background: linear-gradient(to right, #26afaf 0%, #330867 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px;
+}
+
+.insta-wrapper .tag {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.insta-wrapper h1 span {
+  border: 5px solid #26afaf;
+  padding: 10px;
+}
+
+#instafeed .instafeed__item {
+  display: inline-block;
+  width: 33%;
+  padding: 0px 3%;
+  vertical-align: middle;
+}
+
+#instafeed .instafeed__item img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 20px #aaa, 0px 5px 40px #ddd;
+}
+
+#instafeed .instafeed__item__caption {
+  padding: 10px 0px;
+  font-size: 18px;
+  color: #222;
+}
+
+#instafeed .instafeed__item__overlay {
+  position: relative;
+}
+
+#instafeed .instafeed__item__hashtag {
+  color: #26afaf;
+}
+
+#instafeed .instafeed__item__likes {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  padding: 5px 5px;
+  background: #16b8b8;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  border-radius: 2px;
+  box-shadow: 2px 5px 20px #333;
+}
+
+#instafeed .instafeed__item__likes:before {
+  content: "Likes: ";
+}
+
+@media all and (max-width: 991px) {
+  #instafeed .instafeed__item {
+    width: 47%;
+    padding: 0px 3%;
+  }
+}
+@media all and (max-width: 767px) {
+  #instafeed .instafeed__item__caption {
+    font-size: 14px;
+  }
+  #instafeed .instafeed__item__likes {
+    font-size: 12px;
+    top: -40px;
+    left: 10px;
+  }
+  .insta-wrapper {
+    padding: 20px 5px;
+  }
+
+  .insta-wrapper h1 {
+    font-size: 2em;
+  }
+}
