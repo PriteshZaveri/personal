@@ -28,20 +28,23 @@ export default class Home extends React.Component {
                   Web Developer | Gamer | Tech. Enthusiast
                 </p>
                 <p className="info">
-                  Aged 24, Born on 27<sup>th</sup> Feb. 1994. <br />My love for
-                  Computers began since I was a kid. I started programming at
-                  the age of 10 with Logo being my first language on a windows
-                  95 machine. <br />Gradually I started picking up new things
-                  and later at the age of 17 started with{" "}
+                  Aged 24, Born on 27
+                  <sup>th</sup> Feb. 1994. <br />
+                  My love for Computers began since I was a kid. I started
+                  programming at the age of 10 with Logo being my first language
+                  on a windows 95 machine. <br />
+                  Gradually I started picking up new things and later at the age
+                  of 17 started with{" "}
                   <span className="prog-highlight">C programming</span>. Later
                   went on to Object Oriented approach with{" "}
                   <span className="prog-highlight">Java</span>. Meanwhile I
                   started learning{" "}
                   <span className="prog-highlight">Python</span> and{" "}
-                  <span className="prog-highlight">MySQL</span>. <br />Since Web
-                  Developement took a huge leap in technology with HTML5 and
-                  CSS3 releasing in 2014, It was then that I decided to become a
-                  Web Developer and started learning the web basics. I learnt
+                  <span className="prog-highlight">MySQL</span>. <br />
+                  Since Web Developement took a huge leap in technology with
+                  HTML5 and CSS3 releasing in 2014, It was then that I decided
+                  to become a Web Developer and started learning the web basics.
+                  I learnt
                   <span className="prog-highlight">HTML5</span>,{" "}
                   <span className="prog-highlight">CSS3</span>,{" "}
                   <span className="prog-highlight">Javascript</span>,{" "}
@@ -50,8 +53,9 @@ export default class Home extends React.Component {
                   <span className="prog-highlight">PHP</span>,{" "}
                   <span className="prog-highlight">ReactJs</span>,{" "}
                   <span className="prog-highlight">NodeJs</span>
-                  etc. to build various Web Applications. <br />Also tried my
-                  hands on Android App Developement for a couple of years.
+                  etc. to build various Web Applications. <br />
+                  Also tried my hands on Android App Developement for a couple
+                  of years.
                 </p>
               </div>
             </div>
@@ -150,18 +154,22 @@ export default class Home extends React.Component {
             <div>
               Trained in SAP Sales and Distribution module. Worked on various
               technologies in different domains such as Automation Initiatives
-              and products based on Artificial Intelligence.<br />
+              and products based on Artificial Intelligence.
+              <br />
               <b>Career Highlights:</b>
-              <br />1) Created 7 independent Automation utilities that resulted
-              in more than 8000 hrs and $750,000 worth of savings in 1 financial
-              year which was highly appreciated by the client.<br />2) Won star
-              employee of the month twice in 8 months.<br />3) Created a website
-              from scratch that served as a Dashboard for team management. The
-              website is hosted on AWS and has proven to be beneficial to the
-              team. The Dashboard is even demonstrated to various Accenture MDs
-              and got highly appreciated for it. I was also a part of the team
-              that created a chat bot called MITR (Machine Intelligent Ticket
-              Resolver)
+              <br />
+              1) Created 7 independent Automation utilities that resulted in
+              more than 8000 hrs and $750,000 worth of savings in 1 financial
+              year which was highly appreciated by the client.
+              <br />
+              2) Won star employee of the month twice in 8 months.
+              <br />
+              3) Created a website from scratch that served as a Dashboard for
+              team management. The website is hosted on AWS and has proven to be
+              beneficial to the team. The Dashboard is even demonstrated to
+              various Accenture MDs and got highly appreciated for it. I was
+              also a part of the team that created a chat bot for automating
+              daily tasks through voice commands.
             </div>
           </Workex>
           <Workex
@@ -172,16 +180,11 @@ export default class Home extends React.Component {
             <div>
               Currently working as a UI Developer on multiple projects primarily
               using Javascript frameworks such as React.Js, Node.Js etc. along
-              with HTML5, CSS3 and Jquery.<br />
+              with HTML5, CSS3 and Jquery.
+              <br />
               The work also involves creating many frontend elements such as
-              Emails, Landing pages and Search engine results page.<br />
-              <b>Websites currently built:</b>{" "}
-              <i>
-                <u>
-                  mobilesinsider.com, laptopsinsider.com, tvsinsider.com,
-                  degreescompared.com
-                </u>
-              </i>
+              Emails, Landing pages and Search engine results page.
+              <br />
             </div>
           </Workex>
           <Workex
@@ -191,7 +194,8 @@ export default class Home extends React.Component {
           >
             <div>
               I have been freelancing since college to make websites and android
-              apps.<br />
+              apps.
+              <br />
               <b>Websites:</b>{" "}
               <i>
                 <u>
